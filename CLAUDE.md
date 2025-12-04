@@ -132,6 +132,12 @@ gt --path <dir>         # Override workspace path
 - [ ] `ctrl+k` - Delete to end of line
 - [ ] `ctrl+w` - Delete word backward
 
+### Distribution & Installation
+- [ ] Post-install shell setup instructions (detect shell, show specific commands)
+- [ ] Homebrew formula (`brew install gotry`)
+- [ ] Winget package (`winget install gotry`)
+- [ ] Post-install hooks for package managers (brew, winget)
+
 ### Enhancements
 - [ ] Configurable git init commit message
 - [ ] Template scaffolding (`gt --template nextjs my-app`)
