@@ -1,4 +1,4 @@
-module github.com/arkaprav0/gotry
+module github.com/raiden076/gotry
 
 go 1.24.0
 

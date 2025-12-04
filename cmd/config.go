@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/arkaprav0/gotry/internal/config"
+	"github.com/raiden076/gotry/internal/config"
 	"github.com/spf13/cobra"
 )
 

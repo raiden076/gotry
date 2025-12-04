@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/arkaprav0/gotry/internal/workspace"
+	"github.com/raiden076/gotry/internal/workspace"
 )
 
 func (m Model) View() string {

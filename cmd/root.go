@@ -5,10 +5,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/arkaprav0/gotry/internal/config"
-	"github.com/arkaprav0/gotry/internal/git"
-	"github.com/arkaprav0/gotry/internal/tui"
-	"github.com/arkaprav0/gotry/internal/workspace"
+	"github.com/raiden076/gotry/internal/config"
+	"github.com/raiden076/gotry/internal/git"
+	"github.com/raiden076/gotry/internal/tui"
+	"github.com/raiden076/gotry/internal/workspace"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/spf13/cobra"
 )

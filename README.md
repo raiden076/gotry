@@ -7,7 +7,7 @@ A universal alternative to [try](https://github.com/tobi/try) - an ephemeral wor
 ### From source
 
 ```bash
-go install github.com/arkaprav0/gotry@latest
+go install github.com/raiden076/gotry@latest
 ```
 
 ### Shell integration

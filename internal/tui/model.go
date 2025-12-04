@@ -1,7 +1,7 @@
 package tui
 
 import (
-	"github.com/arkaprav0/gotry/internal/workspace"
+	"github.com/raiden076/gotry/internal/workspace"
 	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/sahilm/fuzzy"

@@ -13,7 +13,7 @@ import (
 
 const commitMessage = `✨ Let's try something new
 
-🤖 Created with gotry (https://github.com/arkaprav0/gotry)`
+🤖 Created with gotry (https://github.com/raiden076/gotry)`
 
 func Init(path string) error {
 	cmd := exec.Command("git", "init")
