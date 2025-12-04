@@ -133,6 +133,7 @@ gt --path <dir>         # Override workspace path
 - [ ] `ctrl+w` - Delete word backward
 
 ### Enhancements
+- [ ] Configurable git init commit message
 - [ ] Template scaffolding (`gt --template nextjs my-app`)
 - [ ] Framework presets (Next.js, Hono, Remix, etc.)
 - [ ] Cloud platform configs (Cloudflare, Netlify, Vercel)
