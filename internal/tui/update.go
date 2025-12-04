@@ -4,7 +4,6 @@ import (
 	"strings"
 
 	"github.com/arkaprav0/gotry/internal/workspace"
-	"github.com/charmbracelet/bubbles/textinput"
 	tea "github.com/charmbracelet/bubbletea"
 )
 
