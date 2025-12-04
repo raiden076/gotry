@@ -7,9 +7,9 @@ import (
 )
 
 var initCmd = &cobra.Command{
-	Use:   "init [bash|zsh|fish]",
+	Use:   "init [bash|zsh|fish|powershell]",
 	Short: "Output shell integration script",
-	Long:  `Output shell function for your shell. Add to your .bashrc, .zshrc, or config.fish`,
+	Long:  `Output shell function for your shell. Add to your .bashrc, .zshrc, config.fish, or $PROFILE`,
 	Args:  cobra.ExactArgs(1),
 	RunE:  runInit,
 }
@@ -26,8 +26,10 @@ func runInit(cmd *cobra.Command, args []string) error {
 		fmt.Print(bashZshInit)
 	case "fish":
 		fmt.Print(fishInit)
+	case "powershell", "pwsh":
+		fmt.Print(powershellInit)
 	default:
-		return fmt.Errorf("unsupported shell: %s (supported: bash, zsh, fish)", shell)
+		return fmt.Errorf("unsupported shell: %s (supported: bash, zsh, fish, powershell)", shell)
 	}
 
 	return nil
@@ -68,4 +70,22 @@ function gt
 
     return $exit_code
 end
+`
+
+const powershellInit = `# gotry shell integration
+# Add this to your PowerShell profile ($PROFILE):
+#   gotry init powershell | Invoke-Expression
+
+function gt {
+    $result = gotry @args
+    $exitCode = $LASTEXITCODE
+
+    if ($exitCode -eq 0 -and $result -and (Test-Path -Path $result -PathType Container)) {
+        Set-Location $result
+    } elseif ($result) {
+        Write-Output $result
+    }
+
+    return $exitCode
+}
 `

@@ -63,8 +63,8 @@ Collision handling: Append `-2`, `-3`, etc. if name exists on same day.
   ```
 
 ### Shell Integration
-`gt init bash|zsh|fish` outputs shell-specific function.
-User adds `eval "$(gt init zsh)"` to rc file.
+`gt init bash|zsh|fish|powershell` outputs shell-specific function.
+User adds `eval "$(gt init zsh)"` to rc file (or `gotry init powershell | Invoke-Expression` in PowerShell `$PROFILE`).
 
 ---
 
@@ -76,7 +76,7 @@ gt                     # Open TUI selector
 gt <query>             # Open TUI with pre-filled search
 gt <name>              # Create new directory if no match
 gt <url>               # Clone repo into dated directory
-gt init bash|zsh|fish  # Output shell integration
+gt init bash|zsh|fish|powershell  # Output shell integration
 gt config              # Show current config
 gt version             # Show version
 ```
@@ -117,7 +117,7 @@ gt --path <dir>         # Override workspace path
 - [x] Clone repos into dated directories
 - [x] Recency-aware sorting
 - [x] Batch delete with YES confirmation
-- [x] Shell integration (bash/zsh/fish)
+- [x] Shell integration (bash/zsh/fish/powershell)
 - [x] Config file support
 
 ---

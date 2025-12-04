@@ -23,6 +23,9 @@ eval "$(gotry init zsh)"
 
 # fish (~/.config/fish/config.fish)
 gotry init fish | source
+
+# PowerShell ($PROFILE)
+gotry init powershell | Invoke-Expression
 ```
 
 ## Usage
