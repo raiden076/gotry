@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
+import "github.com/arkaprav0/gotry/cmd"
 
 func main() {
-	fmt.Println("gotry")
+	cmd.Execute()
 }
