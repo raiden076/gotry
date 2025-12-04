@@ -197,6 +197,12 @@ go build -o gotry .
 ./gotry
 ```
 
+### Git Commits
+**IMPORTANT:** Always use signed commits with `-S` flag:
+```bash
+git commit -S -m "feat: your message"
+```
+
 ### Design Principles
 1. **Simple yet production-ready** - No unwanted complexity
 2. **Extensible** - Easy to add template system later
